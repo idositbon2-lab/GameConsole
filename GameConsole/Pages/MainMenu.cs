@@ -13,6 +13,7 @@ namespace GameConsole.Pages
 		{
 			Add(new MenuItem("Register", new RegisterScreen()));
 			Add("Login",new LoginScreen());
-		}
+			Add(new MenuItem("Your Info", new InfoPAge("", "", "")));
+        }
 	}
 }

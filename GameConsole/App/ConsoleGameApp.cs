@@ -1,0 +1,22 @@
+﻿using GameConsole.Base;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GameConsole.App
+{
+    internal class ConsoleGameApp
+    {
+        private Screen mainPage;
+        public static Models.User user;
+        public ConsoleGameApp() { 
+         this.mainPage=new Pages.WelcomeScreen();
+        }
+        public void StartApp()
+        {
+            mainPage.Show();
+        }
+    }
+}
